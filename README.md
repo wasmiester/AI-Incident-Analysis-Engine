@@ -121,49 +121,38 @@ FAILURE_MODE=meltdown python services/test_service/producer.py
 
 #### Supported failure modes:
 
-none – healthy metrics
+`none` – healthy metrics
 
-latency – high latency
+`latency` – high latency
 
-errors – elevated error rate
+`errors` – elevated error rate
 
-meltdown – critical system failure
+`meltdown` – critical system failure
 
 #### Verify Incidents
+```sql
 SELECT service, severity, status, occurrence_count
 FROM incidents
 ORDER BY last_seen DESC;
+```
 
 # Incident Lifecycle
-Anomaly detected
-
-Incident created (or updated if already active)
-
-Severity escalates with repeated failures
-
-Incident auto-resolves when metrics normalize
-
-Timeline records all state changes
+- Anomaly detected
+- Incident created (or updated if already active)
+- Severity escalates with repeated failures
+- Incident auto-resolves when metrics normalize
+- Timeline records all state changes
 
 # Real-World Use Cases
-Microservice health monitoring
-
-SRE alert fatigue reduction
-
-Intelligent incident correlation
-
-AI-assisted observability platforms
-
-Foundation for auto-remediation systems
+- Microservice health monitoring
+- SRE alert fatigue reduction
+- Intelligent incident correlation
+- AI-assisted observability platforms
+- Foundation for auto-remediation systems
 
 # Future Enhancements
-Model retraining from live metrics
-
-Per-service ML models
-
-Alerting integrations (Slack, PagerDuty)
-
-Auto-remediation hooks
-
-Visualization dashboard
-# AI-Incident-Analysis-Engine
+- Model retraining from live metrics
+- Per-service ML models
+- Alerting integrations (Slack, PagerDuty)
+- Auto-remediation hooks
+- Visualization dashboard
