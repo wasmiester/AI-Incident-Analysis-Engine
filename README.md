@@ -4,7 +4,6 @@ An incident detection and management system that uses **unsupervised machine lea
 
 This project simulates how modern SRE / DevOps teams use AI to reduce alert fatigue and respond faster to real production issues.
 
----
 
 ## What This Project Does
 
