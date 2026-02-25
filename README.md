@@ -14,6 +14,13 @@ This project simulates how modern SRE / DevOps teams use AI to reduce alert fati
 - Automatically resolves incidents when metrics recover
 - Maintains a full incident timeline for auditing & RCA
 
+## Built with:
+- Python
+- Kafka
+- PostgreSQL
+- SQLAlchemy
+- scikit-learn
+
 ## Where the AI Is Used
 
 This system uses **unsupervised machine learning**, not hard-coded rules.
